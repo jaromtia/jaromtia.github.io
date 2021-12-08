@@ -1,46 +1,75 @@
----
-layout: post
-title:  "Lab 6 Documentation"
-date:   2021-12-08 08:45:11 -0700
-categories: IT&C
----
+# Documentation
 
+## Lab 6
 
-## Cover page: 
+### Jarom Ti'a
+
+### IT&C 210B
 
 Include an appropriate title, your name, the class, and semester
 
+<div style="page-break-after: always;"></div>
+
 ## Table of Contents: 
 
-Include a table of contents with page numbers for the major parts of the file
+- Overview
+- Design
+- Detailed Documentation
+- Tips and warnings
+- References
 
-## Overview: 
+# Procedures
 
-Summarize, in 3-5 sentences, what was accomplished during the project (i.e., this
-lab). Be specific about the technologies used to do it. Mention why it was done the way it was
+## **Overview** 
+
+In this lab you will create a RESTful API to handle all of your requests for you. You will also create a front-end website for those REST API's so that other users can interact with a todo list. The front-end portion of the web application will be publically available but the API's will not be.
+
+## Technologies
+
+- NodeJS
+- Google Oauth2
+- Javascript
+- JSON
+- NPM (Node Package Manager)
+- Vue.js
+- CI/Cd Pipelines
+- XHR Request
+- Progressive Web Apps
+
+## Design choices
+
+These technologies are used so that the 
+
+Summarize, in 3-5 sentences, what was accomplished during the project (i.e., this lab). Be specific about the technologies used to do it. Mention why it was done the way it was
 (justify the design and the choice of technologies used, but briefly).
-Design: Describe the overall design of your work. Specifically, discuss how the
-webpage/functionality works in terms of the technologies used and how they interact. This is
+
+## Design: 
+
+Describe the overall design of your work. Specifically, discuss how the webpage/functionality works in terms of the technologies used and how they interact. This is
 not where you go into the details of your code. Rather, explain the architectural design of what
 you did. There are two parts to this section:
-a) Describe how the user interacts with the new features that you’ve added. For example,
+1. Describe how the user interacts with the new features that you’ve added. For example,
 “Users will type in a new to do item and click submit. This will call the … route, which
 will have NodeJS add … to the MongoDB database and … Users will then see …” Use
 screenshots to help illustrate and explain.
-b) Present and explain the UML Sequence Diagram(s). From a technical perspective,
+2. Present and explain the UML Sequence Diagram(s). From a technical perspective,
 explain what data is being passed between the various component parts (e.g., NodeJS server,
 Vue front-end, Mongo database). This section should fully convey the high level approach you
 took. It should also include justification for your design (e.g., “An API architecture was used in
 order to…”) and any limitations therein (e.g., because MongoDB is stored in the cloud…).
-Detailed Documentation: This is where you discuss your code. Describe in a succinct way the key
-files (and how they’re arranged), objects, functions, methods, attributes, etc., that are pertinent to what
+
+## Detailed Documentation: 
+
+This is where you discuss your code. Describe in a succinct way the key files (and how they’re arranged), objects, functions, methods, attributes, etc., that are pertinent to what
 was done in the lab. This is likely best done using bullets or tables. Make sure they are organized in a
 meaningful way and sufficient detail is provided.
 For example, key routes, functions, and variables should be described in a sentence that outlines their
 purpose and any notes about their use. Where appropriate you can insert pieces of your code or
 reference their position / location in the Documented Code section.
-Tips & Warnings: Include at least 3 tips and/or warnings that highlight common errors or
-misunderstandings. These are similar to tips from regular lab write-ups that you create. Remember,
+
+## Tips & Warnings: 
+
+Include at least 3 tips and/or warnings that highlight common errors or misunderstandings. These are similar to tips from regular lab write-ups that you create. Remember,
 don’t use first person.
 
 ## References: 
@@ -56,8 +85,9 @@ http://www.wireshark.org/, Wireshark Foundation, accessed Sept 2011.
 http://stackoverflow.com/questions/1133770/how-do-i-convert-a-string-into-an-integer-in-javascript,
 Stack Overflow, accessed Sept 2011.
 
-## Documented Code: Include as an appendix your documented code. This should include comments that
-help explain variables, functions, etc. in context. They may include the same text as used in the Detailed
+## Documented Code: 
+
+Include as an appendix your documented code. This should include comments that help explain variables, functions, etc. in context. They may include the same text as used in the Detailed
 Documentation section, but in this case they will be inside of your code using the language commenting
 features. Hopefully you have been doing this throughout the project, so it won’t be a lot of extra work.
 It’s a key habit to get into for any coding.
