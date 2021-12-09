@@ -121,9 +121,7 @@ Lab-6B The front-end part of the web API's
 
 2. When completing this lab make sure to double check your .gitignore to make sure it ignores the .env file when pushing it to the github repo. If you do not do this then you will have private information leaked onto a public repository that you do not want others to see.
 
-3. 
-
-Include at least 3 tips and/or warnings that highlight common errors or misunderstandings. These are similar to tips from regular lab write-ups that you create. Remember, don’t use first person.
+3. If you are experiencing a blank web page after logging in it is because your CRUD methods within Home.vue are not working properly. You will have to make sure that read functions properly else you will not see anything appear. If the nav bar does not show up then it is your AppBar.vue that does not work
 
 ## References: 
 
@@ -131,15 +129,76 @@ Include at least 3 tips and/or warnings that highlight common errors or misunder
 
 2. Vue.js - List Rendering https://vuejs.org/v2/guide/list.html, Vue.js, accessed December 2021
 
-3. 
-
-3. Wireshark Foundation, “Wireshark: the world’s foremost protocol analyzer”
-http://www.wireshark.org/, Wireshark Foundation, accessed Sept 2011.
-4. Stack Overflow, “How do I convert a string into an integer in javascript”
-http://stackoverflow.com/questions/1133770/how-do-i-convert-a-string-into-an-integer-in-javascript,
-Stack Overflow, accessed Sept 2011.
+3. Vue.js - Getting started https://012.vuejs.org/guide/, Vue.js, accessed December 2021
 
 ## Documented Code: 
+
+Lab-6A The web API's
+- Models file
+    - Task.js - The model for the mongo database
+- Routes file
+    - auth.js - The authentication end points that allow the user to log in or log out using google Oauth2
+    - tasks.js - The CRUD functionality using different endpoints
+    - user.js - The user endpoint which stores the user variables and information
+- index.js - Allows front end applications to connect to the web api's
+- mongoose.js - Creates a connection with mongoose
+- mssqldb.js - Connects to the Azure Database
+- passport.js - Stores the google authentication variables
+
+Lab-6B The front-end part of the web API's
+- src file
+    - components file
+        - AppBar.vue - Shows the navbar for the user which allows the user to logout
+        - NewTaskForm.vue - The component for the individual tasks which will have a text field, date, and submit button
+        - TaskList.vue - The component for the individual tasks. Contains the checkbox, task text, date, and delete button
+    - router file
+        - index.js - Whenever the user goes to a different page the index.js will reroute them to the specific endpoints using the backend web API's
+    - util file
+        - index.js - Stores the cookies and formats the date
+    - views file
+        - About.vue - Has information of what the project is about
+        - #### Home.Vue - The home page when the user logs in. This will display the task list through it's CRUD method
+
+          - Read task - Fetches the /tasks ends point and returns the response in json format
+
+          - Create task - Fetches the /tasks end point and sends a POST request with the following body
+          ```
+          {
+          method: `POST`,
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            Text: form.Text,
+            Date: formatDate(form.Date),
+          }),
+          credentials: `include`,
+          }
+          ```
+          It then checks the response to make sure it was successful or not and then if it was successful it will display the updated task list.
+
+          - Update task - Fetches the /tasks/task_id endpoint sending a PUT request with the following body
+          ```
+          {
+          method: `PUT`,
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ Done: !task.Done }),
+          credentials: `include`,
+          }
+          ```
+          It then checks the response to make sure it was successful or not and then if it was successful it will display the updated task list.
+
+          - Delete task - Fetches the /tasks/task_id endpoint sending a PUT request with the following body
+          ```
+          {
+          method: `PUT`,
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ Done: !task.Done }),
+          credentials: `include`,
+          }
+          ```
+          It then checks the response to make sure it was successful or not and then if it was successful it will display the updated task list.
+
+        - Login.vue - The first page that a user will see before logging in. This is also the page that the user will be redirected to once they log in
+
 
 Include as an appendix your documented code. This should include comments that help explain variables, functions, etc. in context. They may include the same text as used in the Detailed
 Documentation section, but in this case they will be inside of your code using the language commenting
