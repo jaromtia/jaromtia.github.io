@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Writeup
+title: TryHackMe: MITRE writeup
 permalink: /writeups/
 ---
 # TraHackMe: MITRE writeup
