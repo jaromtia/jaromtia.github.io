@@ -3,7 +3,7 @@ layout: page
 title: TryHackMe: MITRE 2022 writeup
 permalink: /writeups/
 ---
-# [TryHackMe: MITRE](https://tryhackme.com/room/mitre) writeup
+# TryHackMe: MITRE writeup
 
 ## Task 1 - Introduction to MITRE
 
