@@ -1,6 +1,6 @@
 ---
 layout: page
-title: TryHackMe: MITRE writeup
+title: TryHackMe: MITRE 2022 writeup
 permalink: /writeups/
 ---
 # TraHackMe: MITRE writeup
