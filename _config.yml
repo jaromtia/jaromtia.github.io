@@ -24,8 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Jarom Ti'a's BLOG site for TryHackMe walkthroughs and personal projects
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  jaromtia
 
 # Build settings
 theme: minima
