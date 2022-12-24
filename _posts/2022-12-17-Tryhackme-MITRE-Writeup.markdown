@@ -1,8 +1,3 @@
----
-layout: page
-title: TryHackMe: MITRE 2022 writeup
----
-
 # TryHackMe: MITRE writeup
 
 ## Task 1 - Introduction to MITRE
