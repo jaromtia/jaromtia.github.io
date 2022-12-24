@@ -3,6 +3,7 @@ layout: page
 title: TryHackMe: MITRE 2022 writeup
 permalink: /writeups/
 ---
+
 # TryHackMe: MITRE writeup
 
 ## Task 1 - Introduction to MITRE
@@ -54,3 +55,22 @@ ATT&CK is an acronym for **Adversarial Tactics, Techniques, and Common Knowledge
 7. What software is associated with this group that lists phishing as a technique?
     - To find the **Answer** navigate to the *Axiom* and navigate to the *Software* Section and find the software that lists *Phishing* as a technique.
     - **Answer**: Hikit
+
+8. What is the description for this software?
+    - Select Hikit under the *Software* Section and find the description.
+    - **Answer**: Hikit is a malware that has been used by Axiom for late-stage persistence and exfiltration after the initial compromise.
+
+9. This group overlaps (slightyly) with which other group?
+    - Winnti Group
+
+10. How many techniques are attributed to this group?
+    - **Answer**: 15
+
+## Task 4 - CAR Knowledge Base
+### What is CAR?
+
+CAR is an acronym for **Cyber Analytics Repository**. This is a repository that contains a lot of information about the different types of attacks that can be used to compromise a system. It is a very useful tool that can be used to improve your security.
+
+1. For the above analytic, what is the pseudocode a representation of?
+    
+    - To find the answer look at the above 
